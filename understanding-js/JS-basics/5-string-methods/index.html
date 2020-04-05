@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <script>
+      // * String Methods allow us to do a lot more with strings, like cool stuff shown below * //
+      // Making it go to uppercase
+      let string = "Learning Javascript";
+      let newString = string.toUpperCase();
+      alert(newString);
+
+      // Making it go to lowercase
+      let cat = "Meow Meow Meow";
+      let newCat = cat.toLowerCase();
+      alert(newCat);
+
+      //Replacing a word or portion with something else
+      let sentence = "I want to learn JS to build really cool websites";
+      let newSentence = sentence.replace("websites", "games");
+      alert(newSentence);
+
+      // Splitting words and letters
+      let coolSentence = "Learning Javascript";
+      let newCoolSentence = string.split(" ");
+      alert(newCoolSentence[0]);
+
+      // joining a word or concatenating it
+      let joinedString = newCoolSentence[0].concat(newCoolSentence[1]);
+      alert(joinedString);
+
+      // slicing for string variables, has a start and an end position
+      let anotherSentence = "I have a super cool cat";
+      let newAnotherSentence = anotherSentence.slice(15, 23);
+      alert(newAnotherSentence);
+    </script>
+  </body>
+</html>
