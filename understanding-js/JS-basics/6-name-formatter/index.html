@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Formatter</title>
+  </head>
+  <body>
+    <script>
+      let name = "bRoOke sWaPp";
+      let nameSplit = name.split(" ");
+      // alert(nameSplit);
+      let firstName = nameSplit[0];
+      // alert(firstName);
+      let lastName = nameSplit[1];
+      // alert(lastName);
+      let formattedFirstName =
+        firstName.slice(0, 1).toUpperCase() +
+        firstName.slice(1, 7).toLowerCase();
+      // alert(formattedFirstName);
+      let formattedLastName =
+        lastName.slice(0, 1).toUpperCase() + lastName.slice(1, 6).toLowerCase();
+      // alert(formattedLastName);
+      let formattedName = formattedFirstName + " " + formattedLastName;
+      alert(formattedName);
+    </script>
+  </body>
+</html>
