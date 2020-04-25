@@ -8,10 +8,24 @@
   <body>
     <script>
       // BELOW ARE METHODS FOR ARRAYS //
+      let users = ["Chris", "Matt", "Bob"];
 
-      //PUSH//
-      //SHIFT//
-      //UNSHIFT//
+      // PUSH - ADDS a value to the end of an array //
+      users.push("Jerry");
+      // UNSHIFT -  ADDS a value to the BEGINNING of an array //
+      users.unshift("Paul");
+      // SHIFT - REMOVES a value from the BEGINNING of an array //
+      users.shift();
+
+      // POP - REMOVES a value from the END of an array //
+      users.pop();
+
+      // REVERSE - REVERSES (duh) the order of an array //
+      users.reverse();
+
+      // SLICE - Allows you to remove a value from the array, no matter what position and returns whatever you removed //
+      users.slice(0, 1);
+      // it needs a start and an end value //
     </script>
   </body>
 </html>
