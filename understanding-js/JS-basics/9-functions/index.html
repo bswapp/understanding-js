@@ -11,16 +11,33 @@
       // function myFunction() {
       //   alert("this should be working");
       // }
+      // myFunction()
 
       // FUNCTION WITH VARIABLES //
-      let a = 5;
-      let b = 7;
-      function myFunction() {
-        let c = b + a;
-        document.write(c);
+      // let a = 5;
+      // let b = 7;
+      // function myFunction() {
+      //   let c = b + a;
+      //   document.write(c);
+      // }
+
+      // myFunction();
+
+      // Using this Stuff in a Game Situation //
+      let score = 0;
+      let lives = 10;
+      let gameOver = false;
+
+      function lifeLost() {
+        score = 0;
+        lives--;
+        gameOver = true;
+        document.write(
+          "<h2>Game Over. You have " + lives + " lives left.</h2>"
+        );
       }
 
-      myFunction();
+      lifeLost();
     </script>
   </body>
 </html>
